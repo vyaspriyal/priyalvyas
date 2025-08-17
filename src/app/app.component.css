@@ -1,0 +1,374 @@
+/* General Styles */
+body {
+  margin: 0;
+  font-family: 'Arial', sans-serif;
+  color: #fff;
+  background-color: #4b0082; /* Dark purple background */
+}
+
+/* Navbar */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  background-color: #3a0066; /* Slightly darker purple */
+}
+
+.navbar .logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #ffd700; /* Golden */
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 1.5rem;
+}
+
+.nav-links li a {
+  text-decoration: none;
+  color: #ffd700;
+  font-weight: bold;
+}
+
+.nav-links.active {
+  display: block;
+}
+
+.hero {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  text-align: center;
+  background-color: #4b0082; /* Purple */
+}
+
+.hero-inner {
+  max-width: 800px;
+  margin: auto;
+}
+
+.hero-left h1 {
+  font-size: 2rem;
+  color: #ffd700; /* Golden */
+}
+
+.hero-left .highlight {
+  color: #ffff00; /* Yellow */
+}
+
+.hero-left p.intro {
+  color: #fff;
+  font-size: 1.2rem;
+  margin: 1rem 0;
+}
+
+.hero-left .btn {
+  display: inline-block;
+  padding: 0.7rem 1.5rem;
+  background-color: #ffd700; /* Golden */
+  color: #4b0082;
+  font-weight: bold;
+  border-radius: 5px;
+  text-decoration: none;
+  margin-top: 1rem;
+}
+
+/* About Section */
+.section {
+  padding: 4rem 2rem;
+  background-color: #4b0082; /* Purple */
+}
+
+.title {
+  font-size: 2rem;
+  color: #ffd700; /* Golden */
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.section p {
+  max-width: 700px;
+  margin: auto;
+  text-align: center;
+  color: #fff;
+}
+/* Skills Section */
+.skills-section {
+  background: linear-gradient(135deg, #6a0dad, #8a2be2); /* purple gradient */
+  color: #fff;
+  padding: 6rem 2rem;
+}
+
+.skills-section .title {
+  text-align: center;
+  font-size: 2.5rem;
+  margin-bottom: 3rem;
+  text-shadow: 2px 2px 5px rgba(0,0,0,0.3);
+}
+
+/* Skills Cards Layout */
+.skills-group {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem;
+}
+
+.skills-category {
+  background: linear-gradient(145deg, rgba(255,255,255,0.05), rgba(255,255,255,0.1));
+  padding: 2rem;
+  border-radius: 20px;
+  min-width: 250px;
+  max-width: 300px;
+  text-align: left;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.3);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Hover effect */
+.skills-category:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 30px rgba(0,0,0,0.5);
+}
+
+/* Category headers */
+.skills-category h3 {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+  background: linear-gradient(90deg, #ffd700, #fff);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  display: flex;
+  align-items: center;
+}
+
+.skills-category h3 i {
+  margin-right: 0.5rem;
+  animation: icon-glow 2s infinite alternate;
+}
+
+/* Glow animation for icons */
+/* @keyframes icon-glow {
+  0% { color: #ffd700; text-shadow: 0 0 5px #ffd700; }
+  100% { color: #fff; text-shadow: 0 0 15px #fff, 0 0 25px #ffd700; }
+} */
+
+.skills-category ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+.skills-category li {
+  margin-bottom: 0.8rem;
+  line-height: 1.4;
+  position: relative;
+  padding-left: 1.5rem;
+  transition: color 0.3s ease;
+}
+
+/* Golden dot before each skill */
+.skills-category li::before {
+  content: "•";
+  position: absolute;
+  left: 0;
+  color: #ffd700;
+  font-weight: bold;
+}
+
+/* Hover skill effect */
+.skills-category li:hover {
+  color: #ffd700;
+  cursor: default;
+}
+
+
+
+
+/* Professional Journey */
+.journey-section {
+  padding: 4rem 2rem;
+  background-color: #4b0082; /* Purple */
+}
+
+.journey-container {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  max-width: 800px;
+  margin: auto;
+}
+
+.journey-card {
+  padding: 1.5rem;
+  border-left: 4px dotted #ffd700; /* Dotted golden line */
+  background-color: rgba(255, 255, 255, 0.05);
+  position: relative;
+  color: #fff;
+}
+
+.journey-card h3 {
+  color: #ffd700; /* Golden */
+  margin: 0;
+}
+
+.journey-card .company {
+  color: #ffff00; /* Yellow */
+  font-weight: bold;
+}
+
+.journey-card .year {
+  color: #fff;
+  font-style: italic;
+  margin-bottom: 0.5rem;
+}
+
+.journey-card .details {
+  color: #fff;
+  line-height: 1.5;
+}
+
+/* Education Section */
+.education-section {
+  padding: 4rem 2rem;
+  background-color: #4b0082; /* Purple */
+     color: #fff;
+}
+
+.education-container {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  max-width: 800px;
+  margin: auto;
+}
+
+.education-card {
+  padding: 1rem;
+  border-left: 4px dotted #ffd700; /* Dotted golden line */
+  background-color: rgba(255, 255, 255, 0.05);
+}
+
+.education-card h3,
+.education-card p {
+  margin: 0.3rem 0;
+}
+
+/* Footer */
+.footer {
+  text-align: center;
+  padding: 2rem;
+  background-color: #3a0066;
+
+   color: #ffd700;
+}
+
+.footer .socials a {
+  margin: 0 0.5rem;
+   color: #fff;
+  font-size: 1.2rem;
+}
+
+.footer .copy {
+  margin-top: 1rem;
+   color: #fff;
+}
+/* Responsive navbar */
+
+/* Desktop - normal navbar */
+.nav-links {
+  display: flex;
+  gap: 2rem;
+}
+
+.hamburger {
+  display: none; /* Hide hamburger on desktop */
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+  .nav-links {
+    position: absolute; /* Not full-screen fixed */
+    top: 70px; /* Below navbar */
+    right: -250px; /* Hidden by default */
+    width: 200px;
+    background-color: #3a0066; /* Purple background */
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 1rem;
+    gap: 1rem;
+    border-radius: 0 0 8px 8px;
+    transition: right 0.3s ease-in-out;
+    max-height: fit-content; /* Adjust height to content */
+  }
+
+  .nav-links.active {
+    right: 0; /* Slide in */
+  }
+
+  .hamburger {
+    display: block;
+    background: none;
+    border: none;
+    font-size: 2rem;
+    color: #FFD700; /* Golden color */
+    cursor: pointer;
+  }
+}
+#about { background-color: rgba(58, 0, 102, 0.95); }
+#skills { background-color: rgba(58, 0, 102, 0.85); }
+#journey { background-color: rgba(58, 0, 102, 0.95); }
+#education { background-color: rgba(58, 0, 102, 0.85); }
+.section {
+  padding: 4rem 2rem;
+  box-shadow: inset 0 1px 0 rgba(255,255,255,0.1); 
+}
+.about-section {
+  background: #4b0082; /* deep purple */
+  color: #fdd835; /* golden/yellow */
+  padding: 60px 20px;
+  text-align: center; /* center all text */
+
+}
+
+.about-section .title {
+  font-size: 2.2rem;
+ 
+  color: #fff;
+}
+
+.about-container p {
+  font-size: 1.05rem;
+  line-height: 1.8;
+  margin-bottom: 20px;
+  display: inline-block; /* keep icon left of text while centering */
+  text-align: left;
+  position: relative;
+  padding-left: 35px;
+  max-width: 700px; /* limit width for readability */
+}
+
+.about-container p i {
+  position: absolute;
+  left: 0;
+  top: 2px;
+  color: #fdd835;
+  font-size: 1.2rem;
+}
+
+@media (max-width: 768px) {
+  .about-section {
+    padding: 40px 15px;
+  }
+  .about-container p {
+    padding-left: 25px;
+  }
+  .about-container p i {
+    font-size: 1rem;
+  }
+}
+
+
